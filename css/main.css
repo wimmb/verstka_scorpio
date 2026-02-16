@@ -1282,12 +1282,12 @@ tr, td {
 }
 
 .reviews__carousel .swiper-wrapper {
-	height: auto;
+	height: inherit;
 }
 
 .reviews__carousel .swiper-slide {
 	box-sizing: border-box;
-	height: auto;
+	height: inherit;
 }
 
 .reviews__card {
