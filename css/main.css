@@ -1372,13 +1372,13 @@ tr, td {
 	.reviews__carousel .swiper-slide {
 		flex: 0 1 calc(50% - 10px);
 	}
-	.def-carousel .swiper-wrapper {
+	/*.def-carousel .swiper-wrapper {
 		flex-wrap: wrap;
 		gap: 20px;
 	}
 	.def-carousel .swiper-slide {
 		flex: 0 1 calc(100% / 3 - 14px);
-	}
+	}*/
 }
 
 @media only screen and (max-width: 1199.98px) {
