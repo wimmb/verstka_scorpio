@@ -1281,13 +1281,9 @@ tr, td {
 	overflow: hidden;
 }
 
-.reviews__carousel .swiper-wrapper {
-	height: inherit;
-}
-
 .reviews__carousel .swiper-slide {
 	box-sizing: border-box;
-	height: inherit;
+	height: auto;
 }
 
 .reviews__card {
