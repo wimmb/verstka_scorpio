@@ -79,11 +79,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	const burgerBtn = document.querySelector('.header__mobile-burger');
 	const mobileMenu = document.querySelector('.header__mobile-menu');
 
-	burgerBtn.addEventListener('click', function () {
-		burgerBtn.classList.toggle('active');
-		mobileMenu.classList.toggle('active');
-		header.classList.toggle('open-menu');
-	});
+	if (burgerBtn && mobileMenu && header) {
+		burgerBtn.addEventListener('click', function () {
+			burgerBtn.classList.toggle('active');
+			mobileMenu.classList.toggle('active');
+			header.classList.toggle('open-menu');
+		});
+	}
 
 	function getHeaderOffset() {
 		return window.innerWidth <= MOBILE_BREAKPOINT ? OFFSET_MOBILE : OFFSET_DESKTOP;
