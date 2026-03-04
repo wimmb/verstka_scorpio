@@ -871,11 +871,12 @@ tr, td {
 }
 
 /*----------------------------------*/
-
+.hero2-sect.sect,
 .hero-sect.sect {
 	padding: 80px 0;
 }
 
+.hero2-sect::before,
 .hero-sect::before {
 	background-color: rgba(12, 15, 18, 0.7);
 	position: absolute;
@@ -888,6 +889,7 @@ tr, td {
 	z-index: 2;
 }
 
+.hero2__bgs,
 .hero__bgs {
 	position: absolute;
 	left: 0;
@@ -897,6 +899,7 @@ tr, td {
 	z-index: 1;
 }
 
+.hero2__bgs > img,
 .hero__bgs > img {
 	width: 100%;
 	height: 100%;
@@ -909,16 +912,24 @@ tr, td {
 	left: 0;
 }
 
+.hero2__bgs > img.active,
 .hero__bgs > img.active {
 	opacity: 1;
 }
 
+.hero2__container,
 .hero__container {
 	z-index: 4;
 }
 
 .hero__content {
 	padding: 100px 0;
+	margin: 0 auto;
+	text-align: center;
+	color: var(--grey-color);
+}
+
+.hero2__content {
 	margin: 0 auto;
 	text-align: center;
 	color: var(--grey-color);
@@ -1357,6 +1368,61 @@ tr, td {
 	height: 100%;
 }
 
+.careers-sect.sect {
+	padding: 60px 0;
+}
+
+.careers__content {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.careers__2blocks {
+	display: flex;
+	gap: 20px;
+}
+
+.careers__2blocks-col {
+	flex: 0 1 50%;
+}
+
+.careers__3blocks {
+	display: flex;
+	gap: 20px;
+}
+
+.careers__3blocks-col {
+	flex: 0 1 33.33%;
+}
+
+.careers__info {
+	position: relative;
+	padding: 25px 20px;
+	border: 1px solid var(--grey-color);
+	border-radius: var(--border-radius);
+	height: 100%;
+}
+
+.careers__info .careers__info-title {
+	font-size: 28px;
+	margin: 0;
+}
+
+.careers__info-text {
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.careers__info-text *:last-of-type {
+	margin-bottom: 0;
+}
+
+.careers__info-text ul li:not(:last-child) {
+	margin-bottom: 8px;
+}
+
 /*-------------------------------------------*/
 /*------------------MEDIA--------------------*/
 
@@ -1424,6 +1490,15 @@ tr, td {
 		padding: 0 20px 200px;
 		overflow: hidden;
 	}
+	.careers__2blocks,
+	.careers__3blocks {
+		flex-direction: column;
+	}
+	.careers__2blocks-col,
+	.careers__3blocks-col {
+		flex: 0 1 100%;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -1490,6 +1565,12 @@ tr, td {
 	}
 	.gallery__item:nth-child(5) {
 		grid-column: 1 / -1 !important;
+	}
+	.careers__info .careers__info-title {
+		font-size: 24px;
+	}
+	.careers__info-text {
+		font-size: 16px;
 	}
 }
 
@@ -1573,6 +1654,9 @@ tr, td {
 	}
 	.gallery__item {
 		height: 220px;
+	}
+	.careers__info {
+		padding: 20px 18px;
 	}
 }
 
